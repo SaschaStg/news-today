@@ -2,6 +2,7 @@ import { Bars4Icon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import React from 'react'
 import DarkModeButton from './DarkModeButton'
+import NavLinks from './NavLinks'
 
 const Header = () => {
     return (
@@ -19,6 +20,7 @@ const Header = () => {
                     <DarkModeButton />
                 </div>
             </div>
+            <NavLinks />
         </header>
     )
 }
