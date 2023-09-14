@@ -1,6 +1,7 @@
 import { Bars4Icon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import React from 'react'
+import DarkModeButton from './DarkModeButton'
 
 const Header = () => {
     return (
@@ -15,6 +16,7 @@ const Header = () => {
                 </Link>
                 <div className="space-x-5 flex items-center">
                     <Bars4Icon className="h-6 w-6 cursor-pointer" />
+                    <DarkModeButton />
                 </div>
             </div>
         </header>
