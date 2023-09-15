@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Head() {
+const Head = () => {
     return (
         <>
             <title>News Today</title>

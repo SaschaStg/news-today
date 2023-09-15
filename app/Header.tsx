@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import DarkModeButton from './DarkModeButton'
 import NavLinks from './NavLinks'
+import SearchBox from './SearchBox'
 
 const Header = () => {
     return (
@@ -21,6 +22,7 @@ const Header = () => {
                 </div>
             </div>
             <NavLinks />
+            <SearchBox />
         </header>
     )
 }

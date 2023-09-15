@@ -2,11 +2,13 @@ import Link from "next/link";
 
 interface Props {
     category: Category;
+    isActive: boolean;
 }
 
-const NavItem = ({ category }: Props) => {
+const NavItem = ({ category, isActive }: Props) => {
     return (
-        <Link className="text-lg font-bold underline decoration-blue-500 underline-offset-4 navLink" href={`/suchen?${category.toLowerCase()}`}>
+        <Link className={`navLink ${isActive && 'text-lg font-bold underline decoration-blue-500 navLink'}`}
+            href={`/suchen?${category.toLowerCase()}`}>
             {category}
         </Link>
     )
