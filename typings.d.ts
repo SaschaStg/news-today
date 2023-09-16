@@ -1,4 +1,4 @@
-type Category = "automobil" | "apple" | "politik" | "sport" | "technologie";
+type Category = "auto" | "apple" | "politik" | "sport" | "technologie";
 
 interface Article {
   author: string;

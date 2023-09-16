@@ -1,1 +1,1 @@
-export const categories: Category[] = ["automobil", "apple", "politik", "sport", "technologie"];
+export const categories: Category[] = ["auto", "apple", "politik", "sport", "technologie"];

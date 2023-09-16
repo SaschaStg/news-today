@@ -1,3 +1,6 @@
+import dayjs from "dayjs";
+import ReadButton from "./ReadButton";
+
 interface Props {
     article: Article;
 }
@@ -18,10 +21,10 @@ const Article = ({ article }: Props) => {
                     <p>{article.description}</p>
                     <div className="ml-auto flex flex-col space-x-1 pt-5 text-right text-xs italic text-gray-400">
                         <p>{article.author} -</p>
-                        <p className="text-xs">{article.publishedAt}</p>
+                        <p className="text-xs">{dayjs(article.publishedAt).format("DD.MM.YYYY HH:MM")} Uhr</p>
                     </div>
                 </div>
-
+                <ReadButton article={article} />
             </div>
         </article>
     )
