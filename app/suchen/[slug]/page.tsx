@@ -1,3 +1,4 @@
+import NewsList from "@/app/NewsList";
 import { fetchNews } from "../../utils/fetchNews";
 
 interface Props {
@@ -7,9 +8,9 @@ interface Props {
 const SearchDetailPage = async ({ params }: Props) => {
     const keyword = params.slug;
     const { articles } = await fetchNews(keyword);
-    console.log(articles)
+
     return (
-        <div>SearchDetailPage</div>
+        <NewsList articles={articles} />
     )
 }
 
