@@ -3,6 +3,8 @@ import { fetchNews } from './utils/fetchNews'
 import { categories } from '@/constants/categories'
 import NewsList from './NewsList'
 
+export const runtime = "edge"
+
 const HomePage = async () => {
 
   const randomCategory = categories[Math.floor(Math.random() * categories.length)]
