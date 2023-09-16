@@ -10,7 +10,7 @@ const SearchBox = () => {
 
     const submitHandler = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        router.push(`/suchen?q=${input.toLowerCase()}`)
+        router.push(`/suchen/${input.toLowerCase()}`)
     }
 
     return (
